@@ -170,5 +170,33 @@
     height: 100px;
     /* test */
     width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
     
+}
+.footer-left{
+    border: solid 1px red;
+
+    /* regola di test */
+
+    width: calc(100% / 3);
+}
+
+.footer-middle{
+    border: solid 1px red;
+
+    /* regola di test */
+
+    width: calc(100% / 3);
+}
+
+.footer-right{
+    border: solid 1px red;
+
+    /* regola di test */
+
+    width: calc(100% / 3);
 }
