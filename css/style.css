@@ -260,22 +260,26 @@
 
 @media  screen and (max-width:992px) {
     .spoty-album{
-        width: calc(100% / 5);
+        width: calc(100% / 5 - 15px);
     }
     .spoty-yours{
-        /* width: calc(100% / 4); */
+        width: calc(100% / 5 - 15px);
     }
     .Spoty-body{
-        /* padding: 150px 80px ; */
+        padding-left: 200px;
     }
 }
 
 @media screen and (max-width:798px){
     .spoty-album{
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 15px);
+    }
+    .spoty-yours{
+        width: calc(100% / 3 - 15px);
     }
     .Spoty-body{
-        padding-left: 200px;
+        padding-left: 160px;
+        padding-top: 160px;
     }
     
 
@@ -285,8 +289,11 @@
     .Side-bar{
         width: 20%;
     }
+    .spoty-album{
+        width: calc(100% / 2 - 15px);
+    }
     .spoty-yours{
-        width: calc(100% / 3);
+        width: calc(100% / 2 - 15px);
     }
     .Spoty-body{
         padding-left: 100px;
