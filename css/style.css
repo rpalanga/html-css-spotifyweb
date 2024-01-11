@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* regola di reset */
+
+.big-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.Side-bar{
+    border: 1px solid red;
+    /* regole di test */
+    width: 20%;
+    height:1000px;
+}
+.Spoty-body{
+    border: 1px solid red;
+    flex-grow: 1;
+    
+}
