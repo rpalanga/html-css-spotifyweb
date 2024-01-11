@@ -17,8 +17,77 @@
     width: 20%;
     height:1000px;
 }
+
+/* Inizio Spoty Body */
+
 .Spoty-body{
     border: 1px solid red;
+
+    /* regole di test */
     flex-grow: 1;
+    
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 80px;
+
+    
+}
+
+.spoty-songs{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.spoty-selection{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.spoty-selection ul{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+    
+}
+
+.spoty-selection ul li{
+    list-style-type: none;
+}
+
+.spoty-list{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.spoty-album{
+    border: 1px solid red;
+    /* regola di reset */
+    width: calc(100% / 6 - 15px);
+    height: 150px;
+
+}
+
+/* Fine Spoty Body */
+
+/* Fine Main */
+
+/* Inizio Footer */
+.footer-container{
+    border: 1px solid red;
+    height: 100px;
+    /* test */
+    width: 100%;
     
 }
