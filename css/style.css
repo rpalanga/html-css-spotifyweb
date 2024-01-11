@@ -17,12 +17,20 @@
     border: 1px solid red;
     /* regole di test */
     width: 20%;
-    height:1000px;
+    max-height:1000px;
+    padding-bottom: 100px;
 
     display: flex;
     flex-direction:column ;
     justify-content:space-between ;
+
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
+
 
 .side-up{
     width: 100%;
@@ -81,6 +89,11 @@
     flex-direction: column;
 
     padding-top: 80px;
+    padding-left: 300px;
+    padding-bottom: 150px;
+    
+    height: 100vh;
+    overflow: auto;
 
     
 }
@@ -175,6 +188,10 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
     
 }
 .footer-left{
@@ -200,3 +217,5 @@
 
     width: calc(100% / 3);
 }
+
+
