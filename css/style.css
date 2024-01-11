@@ -9,6 +9,9 @@
 .big-container{
     display: flex;
     flex-direction: row;
+
+    color: white;
+    /* regola di colore test */
 }
 
 /* Inizio Side Bar */
@@ -29,6 +32,9 @@
     top: 0;
     left: 0;
     z-index: 1;
+
+    background: #000000;
+    padding-top: 100px;
 }
 
 
@@ -88,14 +94,43 @@
     display: flex;
     flex-direction: column;
 
-    padding-top: 80px;
+    padding-top: 200px;
     padding-left: 300px;
     padding-bottom: 150px;
     
     height: 100vh;
     overflow: auto;
 
+    background-color: #151921;
+
     
+}
+
+.spoty-upgrade{
+    border: 1px solid red;
+    height: 100px;
+    /* regole di test */
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+    padding: 10px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+
+    background: #000000;
+    
+
+}
+
+.button-upgrade{
+    padding: ;
 }
 
 .spoty-songs, .spoty-mix, .spoty-artist{
@@ -192,6 +227,9 @@
     position: fixed;
     bottom: 0;
     z-index: 2;
+
+    background: #000000;
+    
     
 }
 .footer-left{
