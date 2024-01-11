@@ -153,6 +153,7 @@
     display: flex;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 
     
 }
@@ -188,8 +189,8 @@
 }
 .spoty-yours{
     border: solid 1px red;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: calc(100% / 6 - 15px);
     /* regole test */
 }
 
@@ -254,6 +255,45 @@
     /* regola di test */
 
     width: calc(100% / 3);
+}
+
+
+@media  screen and (max-width:992px) {
+    .spoty-album{
+        width: calc(100% / 5);
+    }
+    .spoty-yours{
+        /* width: calc(100% / 4); */
+    }
+    .Spoty-body{
+        /* padding: 150px 80px ; */
+    }
+}
+
+@media screen and (max-width:798px){
+    .spoty-album{
+        width: calc(100% / 3);
+    }
+    .Spoty-body{
+        padding-left: 200px;
+    }
+    
+
+}
+
+@media screen and (max-width:480px) {
+    .Side-bar{
+        width: 20%;
+    }
+    .spoty-yours{
+        width: calc(100% / 3);
+    }
+    .Spoty-body{
+        padding-left: 100px;
+    }
+    .spoty-selection ul{
+        flex-wrap: wrap;
+    }
 }
 
 
