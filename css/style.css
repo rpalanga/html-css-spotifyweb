@@ -94,11 +94,11 @@
     display: flex;
     flex-direction: column;
 
-    padding-top: 200px;
+    padding-top: 130px;
     
-    padding-bottom: 150px;
+    padding-bottom: 20px;
     
-    height: 100vh;
+    height: calc(100vh - 100px);
     overflow: auto;
 
     background-color: #151921;
@@ -205,8 +205,7 @@
     
 }
 .spoty-yours{
-    border: solid 1px red;
-    /* height: 150px; */
+    
     width: calc(100% / 6 - 15px);
     
     /* regole test */
@@ -217,14 +216,17 @@
 }
 
 .yours-album{
-    border: 1px solid red;
-    /* regola di reset */
+    
     width: 100%;
-    /* height: 150px; */
+    
 }
 
 .yours-album img{
     width: 100%;
+}
+
+.spoty-yours h3{
+    text-align: center;
 }
 
 
@@ -237,10 +239,20 @@
 }
 
 .spoty-face{
-    border: solid 1px red;
-    height: 200px;
+   
     width: calc(100% / 6 - 15px);
     /* regole test */
+}
+
+.spoty-face .spoty-photo img{
+    width: 100%;
+
+    border-radius: 50%;
+
+}
+
+.spoty-name h3, .spoty-name p{
+    text-align: center;
 }
 
 /* Fine Spoty Body */
@@ -299,8 +311,11 @@
     .spoty-yours{
         width: calc(100% / 5 - 15px);
     }
+    .spoty-face{
+        width: calc(100% / 5 - 15px);
+    }
     .Spoty-body{
-        /* padding-left: 200px; */
+        
     }
 }
 
@@ -311,9 +326,11 @@
     .spoty-yours{
         width: calc(100% / 3 - 15px);
     }
+    .spoty-face{
+        width: calc(100% / 3 - 15px);
+    }
     .Spoty-body{
-        /* padding-left: 160px;
-        padding-top: 160px; */
+       
     }
     
 
@@ -321,7 +338,12 @@
 
 @media screen and (max-width:480px) {
     .Side-bar{
-        width: 20%;
+        width: 50px;
+
+    }
+    
+    .spoty-upgrade{
+        width: calc(100% - 50px);
     }
     .spoty-object{
         width: calc(100% / 2 - 15px);
@@ -329,8 +351,12 @@
     .spoty-yours{
         width: calc(100% / 2 - 15px);
     }
+    .spoty-face{
+        width: calc(100% / 2 - 15px);
+    }
     .Spoty-body{
-        /* padding-left: 100px; */
+    width: calc(100% - 50px);
+        
     }
     .spoty-selection ul{
         flex-wrap: wrap;
