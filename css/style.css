@@ -172,8 +172,13 @@
     flex-wrap: wrap;
     gap: 15px;
 }
+
+.spoty-list h3, .spoty-list p{
+    text-align: center;
+}
+
 .spoty-object{
-    width: 100%;
+    width: calc(100% / 6 - 15px);
 
     display: flex;
     flex-direction: column;
@@ -182,11 +187,14 @@
 }
 
 .spoty-album{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* regola di reset */
-    width: calc(100% / 6 - 15px);
-    height: 150px;
+    width: 100%;
+    /* height: 150px; */
 
+}
+.spoty-object .spoty-album img{
+    width: 100%;
 }
 
 .spoty-collection{
@@ -199,10 +207,27 @@
 }
 .spoty-yours{
     border: solid 1px red;
-    height: 150px;
+    /* height: 150px; */
     width: calc(100% / 6 - 15px);
+    
     /* regole test */
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
+
+.yours-album{
+    border: 1px solid red;
+    /* regola di reset */
+    width: 100%;
+    /* height: 150px; */
+}
+
+.yours-album img{
+    width: 100%;
+}
+
 
 .spoty-name{
     width: 100%;
@@ -269,7 +294,7 @@
 
 
 @media  screen and (max-width:992px) {
-    .spoty-album{
+    .spoty-object{
         width: calc(100% / 5 - 15px);
     }
     .spoty-yours{
@@ -281,7 +306,7 @@
 }
 
 @media screen and (max-width:798px){
-    .spoty-album{
+    .spoty-object{
         width: calc(100% / 3 - 15px);
     }
     .spoty-yours{
@@ -299,7 +324,7 @@
     .Side-bar{
         width: 20%;
     }
-    .spoty-album{
+    .spoty-object{
         width: calc(100% / 2 - 15px);
     }
     .spoty-yours{
