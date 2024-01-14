@@ -487,6 +487,8 @@ body {
         /* padding-left: 5px; */
         background-image: url(../img/logo-small.svg);
         background-repeat: no-repeat;
+        background-position: center;
+        
         width: 30px;
     }
     .logo img{
