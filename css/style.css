@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: sans-serif;
 }
 
 /* regola di reset */
 
-.big-container{
+.big-container {
     display: flex;
     flex-direction: row;
 
@@ -20,16 +20,15 @@ body{
 
 /* Inizio Side Bar */
 
-.Side-bar{
-    border: 1px solid red;
-    /* regole di test */
+.Side-bar {
+   
     width: 230px;
     height: calc(100vh - 100px);
-    
+
 
     display: flex;
-    flex-direction:column ;
-    justify-content:space-between ;
+    flex-direction: column;
+    justify-content: space-between;
 
     /* position: fixed;
     bottom: 0;
@@ -38,21 +37,19 @@ body{
     z-index: 1; */
 
     background: #000000;
-    
+
 }
 
 
-.side-up{
+.side-up {
     width: 100%;
 
     display: flex;
     flex-direction: column;
 }
 
-.logo{
-    border: 1px solid red;
+.logo {
     
-    /* regole di test */
 
     width: 100%;
 
@@ -63,17 +60,14 @@ body{
     padding-left: 20px;
 }
 
-.logo img{
+.logo img {
     height: 44px;
 }
 
 
 
-.side-features{
-    border: 1px solid red;
-    
-    /* regole di test */
-
+.side-features {
+  
     width: 100%;
 
     display: flex;
@@ -82,28 +76,35 @@ body{
 
     margin-bottom: 20px;
 
-    
-     /* da togliere nella media query mobile */
-     padding-left: 20px;
+
+    /* da togliere nella media query mobile */
+    padding-left: 20px;
+}
+
+.side-features p{
+    opacity: 0.7;
+    font-weight: bold;
 }
 
 
-.home, .search, .library{
+.home,
+.search,
+.library {
     display: flex;
     flex-direction: row;
-   
+
     align-items: center;
     gap: 8px;
 }
 
-.home .logo-home img, .search .logo-search img, .library .logo-library img{
+.home .logo-home img,
+.search .logo-search img,
+.library .logo-library img {
     width: 26px;
 }
 
-.side-Playlist{
-    border: 1px solid red;
-    /* height: 100px; */
-    /* regole di test */
+.side-Playlist {
+    
 
     width: 100%;
 
@@ -116,11 +117,12 @@ body{
 
 }
 
-.side-Playlist h2{
+.side-Playlist h2 {
 
     font-size: 20px;
 }
-.container-playlist{
+
+.container-playlist {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -131,16 +133,16 @@ body{
 }
 
 
-.side-Playlist .container-playlist .add-playlist{
-    
+.side-Playlist .container-playlist .add-playlist {
+
     background-color: gray;
-    
+
     padding: 10px;
 
     font-size: 16px;
 }
 
-.side-Playlist .container-playlist ul{
+.side-Playlist .container-playlist ul {
     list-style-type: none;
 
     display: flex;
@@ -153,10 +155,8 @@ body{
 }
 
 
-.side-profile{
-    border: 1px solid red;
-    height: 100px;
-    /* regole di test */
+.side-profile {
+   
 
     width: 100%;
 
@@ -164,8 +164,38 @@ body{
     flex-direction: column;
     gap: 5px;
 
-     /* da togliere nella media query mobile */
-     padding-left: 20px;
+    /* da togliere nella media query mobile */
+    padding-left: 20px;
+    padding-bottom: 8px;
+}
+
+.side-profile .install {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.side-profile .install img {
+    width: 18px;
+}
+
+
+.side-profile hr {
+    width: 80%;
+}
+
+.side-profile .shape {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.side-profile .shape img {
+    height: 28px;
+    background-color: gray;
+    border-radius: 50%;
+
 }
 
 
@@ -175,32 +205,29 @@ body{
 
 /* Inizio Spoty Body */
 
-.Spoty-body{
-    border: 1px solid red;
+.Spoty-body {
+    
 
     /* regole di test */
     width: calc(100% - 230px);
-    
+
     display: flex;
     flex-direction: column;
 
     padding-top: 130px;
-    
+
     padding-bottom: 20px;
-    
+
     height: calc(100vh - 100px);
     overflow: auto;
 
     background-color: #151921;
 
-    
+
 }
 
-.spoty-upgrade{
-    border: 1px solid red;
-    height: 100px;
-    /* regole di test */
-    
+.spoty-upgrade {
+   
     width: calc(100% - 230px);
 
     display: flex;
@@ -216,13 +243,13 @@ body{
     z-index: 3;
 
     background: #000000;
-    
+
     opacity: 0.4;
 
 }
 
-.button-upgrade{
-    padding: 10px ;
+.button-upgrade {
+    padding: 10px;
 
     display: flex;
     align-items: center;
@@ -231,15 +258,17 @@ body{
     border-radius: 20px;
 }
 
-.spoty-songs, .spoty-mix, .spoty-artist{
+.spoty-songs,
+.spoty-mix,
+.spoty-artist {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
-.spoty-selection{
+.spoty-selection {
     width: 100%;
 
     display: flex;
@@ -247,21 +276,21 @@ body{
     justify-content: center;
 }
 
-.spoty-selection ul{
+.spoty-selection ul {
     display: flex;
     gap: 20px;
     padding: 20px;
     flex-wrap: wrap;
 
-    
+
 }
 
-.spoty-selection ul li{
+.spoty-selection ul li {
     list-style-type: none;
     opacity: 0.7;
 }
 
-.spoty-list{
+.spoty-list {
     width: 100%;
 
     display: flex;
@@ -270,11 +299,12 @@ body{
     gap: 15px;
 }
 
-.spoty-list h3, .spoty-list p{
+.spoty-list h3,
+.spoty-list p {
     text-align: center;
 }
 
-.spoty-object{
+.spoty-object {
     width: calc(100% / 6 - 15px);
 
     display: flex;
@@ -283,29 +313,31 @@ body{
     gap: 10px
 }
 
-.spoty-album{
+.spoty-album {
     /* border: 1px solid red; */
     /* regola di reset */
     width: 100%;
     /* height: 150px; */
 
 }
-.spoty-object .spoty-album img{
+
+.spoty-object .spoty-album img {
     width: 100%;
 }
 
-.spoty-collection{
+.spoty-collection {
     width: 100%;
 
     display: flex;
     flex-direction: row;
     gap: 15px;
-    
+
 }
-.spoty-yours{
-    
+
+.spoty-yours {
+
     width: calc(100% / 6 - 15px);
-    
+
     /* regole test */
 
     display: flex;
@@ -313,22 +345,22 @@ body{
     gap: 15px;
 }
 
-.yours-album{
-    
+.yours-album {
+
     width: 100%;
-    
+
 }
 
-.yours-album img{
+.yours-album img {
     width: 100%;
 }
 
-.spoty-yours h3{
+.spoty-yours h3 {
     text-align: center;
 }
 
 
-.spoty-name{
+.spoty-name {
     width: 100%;
 
     display: flex;
@@ -336,20 +368,21 @@ body{
     gap: 15px;
 }
 
-.spoty-face{
-   
+.spoty-face {
+
     width: calc(100% / 6 - 15px);
     /* regole test */
 }
 
-.spoty-face .spoty-photo img{
+.spoty-face .spoty-photo img {
     width: 100%;
 
     border-radius: 50%;
 
 }
 
-.spoty-name h3, .spoty-name p{
+.spoty-name h3,
+.spoty-name p {
     text-align: center;
 }
 
@@ -358,7 +391,7 @@ body{
 /* Fine Main */
 
 /* Inizio Footer */
-.footer-container{
+.footer-container {
     border: 1px solid red;
     height: 100px;
     /* test */
@@ -374,10 +407,11 @@ body{
     z-index: 2;
 
     background: #000000;
-    
-    
+
+
 }
-.footer-left{
+
+.footer-left {
     border: solid 1px red;
 
     /* regola di test */
@@ -385,7 +419,7 @@ body{
     width: calc(100% / 3);
 }
 
-.footer-middle{
+.footer-middle {
     border: solid 1px red;
 
     /* regola di test */
@@ -393,7 +427,7 @@ body{
     width: calc(100% / 3);
 }
 
-.footer-right{
+.footer-right {
     border: solid 1px red;
 
     /* regola di test */
@@ -402,63 +436,68 @@ body{
 }
 
 
-@media  screen and (max-width:992px) {
-    .spoty-object{
+@media screen and (max-width:992px) {
+    .spoty-object {
         width: calc(100% / 5 - 15px);
     }
-    .spoty-yours{
+
+    .spoty-yours {
         width: calc(100% / 5 - 15px);
     }
-    .spoty-face{
+
+    .spoty-face {
         width: calc(100% / 5 - 15px);
     }
-    .Spoty-body{
-        
-    }
+
+    .Spoty-body {}
 }
 
-@media screen and (max-width:798px){
-    .spoty-object{
+@media screen and (max-width:798px) {
+    .spoty-object {
         width: calc(100% / 3 - 15px);
     }
-    .spoty-yours{
+
+    .spoty-yours {
         width: calc(100% / 3 - 15px);
     }
-    .spoty-face{
+
+    .spoty-face {
         width: calc(100% / 3 - 15px);
     }
-    .Spoty-body{
-       
-    }
-    
+
+    .Spoty-body {}
+
 
 }
 
 @media screen and (max-width:480px) {
-    .Side-bar{
+    .Side-bar {
         width: 50px;
 
     }
-    
-    .spoty-upgrade{
+
+    .spoty-upgrade {
         width: calc(100% - 50px);
     }
-    .spoty-object{
+
+    .spoty-object {
         width: calc(100% / 2 - 15px);
     }
-    .spoty-yours{
+
+    .spoty-yours {
         width: calc(100% / 2 - 15px);
     }
-    .spoty-face{
+
+    .spoty-face {
         width: calc(100% / 2 - 15px);
     }
-    .Spoty-body{
-    width: calc(100% - 50px);
-        
+
+    .Spoty-body {
+        width: calc(100% - 50px);
+
     }
-    .spoty-selection ul{
+
+    .spoty-selection ul {
         flex-wrap: wrap;
     }
 }
-
-
