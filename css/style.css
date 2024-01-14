@@ -473,8 +473,42 @@ body {
 @media screen and (max-width:480px) {
     .Side-bar {
         width: 50px;
+        padding-left: 12.5px;
+        padding-top: 5px;
 
     }
+
+    .side-features, .logo, .side-profile{
+        padding-left: 0;
+    }
+    
+    .logo{
+        /* width: 40px; */
+        /* padding-left: 5px; */
+        background-image: url(../img/logo-small.svg);
+        background-repeat: no-repeat;
+        width: 30px;
+    }
+    .logo img{
+        display: none;
+    }
+
+    .side-features p{
+        display: none;
+    }
+
+    .side-Playlist{
+        display: none;
+    }
+
+    
+
+    .side-profile .install-text, .side-profile .shape h2{
+        display: none;
+    }
+
+
+    /* inizio main */
 
     .spoty-upgrade {
         width: calc(100% - 50px);
