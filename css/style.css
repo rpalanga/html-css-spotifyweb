@@ -393,7 +393,7 @@ body {
 /* Inizio Footer */
 .footer-container {
     border: 1px solid red;
-    height: 100px;
+    /* height: 100px; */
     /* test */
     width: 100%;
 
@@ -406,7 +406,9 @@ body {
     bottom: 0;
     z-index: 2;
 
-    background: #000000;
+    background-color: #000000;
+
+    padding: 20px 10px 26px;
 
 
 }
@@ -416,7 +418,41 @@ body {
 
     /* regola di test */
 
-    width: calc(100% / 3);
+    width: 30%;
+
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.song{
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer-left img{
+    width: 47px;
+}
+
+.footer-left .name-song{
+    color: white;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-left .name-song .Description-Name{
+    opacity: 0.7;
+}
+
+.icon-song{
+    color: white;
 }
 
 .footer-middle {
@@ -424,16 +460,37 @@ body {
 
     /* regola di test */
 
-    width: calc(100% / 3);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
 }
+.up-middle{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.icon-left, .icon-right{
+    display: flex;
+    gap: 20px;
+}
+
+
 
 .footer-right {
     border: solid 1px red;
 
     /* regola di test */
 
-    width: calc(100% / 3);
+    width: 30%;
 }
+
+
+/* fine Footer  */
+
+/* inizio Media Query */
 
 
 @media screen and (max-width:992px) {
@@ -452,7 +509,7 @@ body {
     .Spoty-body {}
 }
 
-@media screen and (max-width:798px) {
+@media screen and (max-width:768px) {
     .spoty-object {
         width: calc(100% / 3 - 15px);
     }
@@ -470,7 +527,7 @@ body {
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:576px) {
     .Side-bar {
         width: 50px;
         padding-left: 12.5px;
@@ -488,7 +545,7 @@ body {
         background-image: url(../img/logo-small.svg);
         background-repeat: no-repeat;
         background-position: center;
-        
+
         width: 30px;
     }
     .logo img{
@@ -505,7 +562,7 @@ body {
 
     
 
-    .side-profile .install-text, .side-profile .shape h2{
+    .side-profile .install-text, .side-profile .shape h2, .side-profile hr{
         display: none;
     }
 
