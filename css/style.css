@@ -333,10 +333,24 @@ body {
     opacity: 1;
 
 
+    position: relative;
+
+}
+
+.play-stop{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    
+    font-size: 60px;
+
+    opacity: 0;
 }
 
 .spoty-object .spoty-album img {
     width: 100%;
+
+
 }
 
 .spoty-collection {
@@ -584,6 +598,10 @@ body {
 
 .spoty-album:hover{
     opacity: 0.5;
+}
+
+.spoty-album .play-stop:hover{
+    opacity: 1;
 }
 
 .spoty-upgrade:hover{
