@@ -21,7 +21,7 @@ body {
 /* Inizio Side Bar */
 
 .Side-bar {
-   
+
     width: 230px;
     height: calc(100vh - 100px);
 
@@ -49,7 +49,7 @@ body {
 }
 
 .logo {
-    
+
 
     width: 100%;
 
@@ -67,7 +67,7 @@ body {
 
 
 .side-features {
-  
+
     width: 100%;
 
     display: flex;
@@ -81,7 +81,7 @@ body {
     padding-left: 20px;
 }
 
-.side-features p{
+.side-features p {
     opacity: 0.7;
     font-weight: bold;
 }
@@ -104,7 +104,7 @@ body {
 }
 
 .side-Playlist {
-    
+
 
     width: 100%;
 
@@ -127,14 +127,14 @@ body {
     flex-direction: column;
     gap: 10px;
     overflow: auto;
-    height:calc(100vh - 430px) ;
-    
+    height: calc(100vh - 430px);
+
 
 }
 
-#create{
+#create {
     font-weight: bold;
-    opacity: 0.7;
+    color: grey;
 }
 
 
@@ -156,12 +156,12 @@ body {
 
     font-weight: bold;
 
-    opacity: 0.7;
+    color: gray;
 }
 
 
 .side-profile {
-   
+
 
     width: 100%;
 
@@ -212,7 +212,7 @@ body {
 /* Inizio Spoty Body */
 
 .Spoty-body {
-    
+
 
     /* regole di test */
     width: calc(100% - 230px);
@@ -233,7 +233,7 @@ body {
 }
 
 .spoty-upgrade {
-   
+
     width: calc(100% - 230px);
 
     display: flex;
@@ -266,7 +266,7 @@ body {
     color: white;
 }
 
-#sub{
+#sub {
     color: white;
 }
 
@@ -326,7 +326,7 @@ body {
 }
 
 .spoty-album {
-   
+
     width: 100%;
     /* height: 150px; */
 
@@ -337,14 +337,15 @@ body {
 
 }
 
-.play-stop{
+.play-stop {
     position: absolute;
-    top: 30px;
-    right: 30px;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 60px;
 
     opacity: 0;
+    /* visibility: hidden; */
 }
 
 .spoty-object .spoty-album img {
@@ -420,7 +421,7 @@ body {
 
 /* Inizio Footer */
 .footer-container {
-  
+
     height: 100px;
     width: 100%;
 
@@ -441,8 +442,8 @@ body {
 }
 
 .footer-left {
-   
-    
+
+
 
     width: 30%;
 
@@ -454,37 +455,37 @@ body {
 
 }
 
-.song{
+.song {
     display: flex;
     gap: 10px;
 
 }
 
-.footer-left img{
+.footer-left img {
     width: 47px;
 }
 
-.footer-left .name-song{
+.footer-left .name-song {
     color: white;
     font-weight: bold;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.footer-left .name-song .Description-Name{
+.footer-left .name-song .Description-Name {
     opacity: 0.7;
 }
 
-.icon-song{
+.icon-song {
     color: white;
 }
 
 .footer-middle {
-    
 
-   
+
+
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -493,26 +494,28 @@ body {
     color: white;
 
 }
-.up-middle{
+
+.up-middle {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    
+
 
 }
 
-.icon-middle{
+.icon-middle {
     font-size: 28px;
 }
 
-.icon-left, .icon-right{
+.icon-left,
+.icon-right {
     display: flex;
     gap: 20px;
     font-size: 20px;
 }
 
-.down-middle{
+.down-middle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -520,7 +523,7 @@ body {
 
 }
 
-.duration{
+.duration {
     width: 170px;
     height: 4px;
     background: gray;
@@ -530,12 +533,12 @@ body {
 
 }
 
-.time{
+.time {
     width: 70%;
     height: 4px;
     background-color: white;
     border-radius: 5px;
-    
+
 
 
 }
@@ -543,7 +546,7 @@ body {
 
 
 .footer-right {
-    
+
     width: 30%;
 
     display: flex;
@@ -556,14 +559,14 @@ body {
     justify-content: flex-end;
 }
 
-.volume{
+.volume {
     width: 120px;
     height: 4px;
     background: gray;
     border-radius: 5px;
 }
 
-.intencity{
+.intencity {
     width: 30%;
     height: 4px;
     background-color: white;
@@ -577,38 +580,45 @@ body {
 
 /* hover side-Bar */
 
-.side-features p:hover{
+.side-features p:hover {
     opacity: 1;
     padding-left: 3px;
     border-left: 2px solid #C7F807;
 }
 
+.container-playlist li:hover, #create:hover{
+    color: white;
+    opacity: 1;
+}
+
 /* hover Upgrade */
 
-.button-upgrade{
+.button-upgrade {
     opacity: 1;
 }
 
 /* hover main */
 
-.spoty-selection ul li:hover{
+.spoty-selection ul li:hover {
     opacity: 1;
     border-bottom: 2px solid #C7F807;
 }
 
-.spoty-album:hover{
+.spoty-album:hover {
     opacity: 0.5;
 }
 
-.spoty-album .play-stop:hover{
+.spoty-album .play-stop:hover {
+    opacity: 1;
+    /* visibility: visible; */
+
+}
+
+.spoty-upgrade:hover {
     opacity: 1;
 }
 
-.spoty-upgrade:hover{
-    opacity: 1;
-}
-
-.spoty-upgrade .button-upgrade:hover{
+.spoty-upgrade .button-upgrade:hover {
     transform: scale(1.3);
 }
 
@@ -653,7 +663,12 @@ body {
         width: calc(100% / 3 - 15px);
     }
 
-    .Spoty-body {}
+    .spoty-album .play-stop {
+        position: absolute;
+        top: 33px;
+        right: 33px;
+
+    }
 
 
 }
@@ -666,11 +681,13 @@ body {
 
     }
 
-    .side-features, .logo, .side-profile{
+    .side-features,
+    .logo,
+    .side-profile {
         padding-left: 0;
     }
-    
-    .logo{
+
+    .logo {
         /* width: 40px; */
         /* padding-left: 5px; */
         background-image: url(../img/logo-small.svg);
@@ -679,21 +696,24 @@ body {
 
         width: 30px;
     }
-    .logo img{
+
+    .logo img {
         display: none;
     }
 
-    .side-features p{
+    .side-features p {
         display: none;
     }
 
-    .side-Playlist{
+    .side-Playlist {
         display: none;
     }
 
-    
 
-    .side-profile .install-text, .side-profile .shape h2, .side-profile hr{
+
+    .side-profile .install-text,
+    .side-profile .shape h2,
+    .side-profile hr {
         display: none;
     }
 
@@ -725,11 +745,11 @@ body {
         flex-wrap: wrap;
     }
 
-    .duration{
+    .duration {
         width: 130px;
     }
 
-    .volume{
+    .volume {
         width: 40px;
     }
 }
